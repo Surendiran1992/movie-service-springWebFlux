@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active:
+      - local
+  application:
+    name: movies/info
+
+server:
+  port: 8090
+  servlet:
+    context-path: /${spring.application.name}
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - local
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: local
+
+  main:
+    banner-mode: off

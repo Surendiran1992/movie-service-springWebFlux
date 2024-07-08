@@ -1,0 +1,22 @@
+#spring:
+#  application:
+#    name: moviesDetails
+#
+#restClient:
+#  movieInfoUrl: https://localhost:8090/v1/movieInfos
+#  movieReviewUrl: https://localhost:8080/v1/review
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile:
+#        - test
+#
+#  data:
+#    mongodb:
+#      host: localhost
+#      port: 27017
+#      database: local
+#
+#  main:
+#    banner-mode: off
